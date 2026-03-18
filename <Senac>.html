@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <title>Cadastro.com</title>
+    <meta charset="UTF-8">
+    <title>Senac</title>
 </head>
 
 <body>
-    <h1>Novo Cadastro</h1>
+
+    <h1>Senac</h1>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="#">Login</a></li>
+    </ul>
 
     <h2>Formulário de cadastro</h2>
 
-    <hr>
-
     <form>
         <p>
-            <label for="nome">Nome:</label>
-            <input type="text" id="cadastro_nome" name="nome"><br><br>
+            <label for="cadastro_nome">Nome completo:</label>
+            <input id="cadastro_nome" type="text"></input>
         </p>
         <p>
-            <label for="email">Email:</label>
-            <input type="email" id="cadastro_email" name="email"><br><br>
+            <label for="cadastro_email">E-mail:</label>
+            <input id="cadastro_email" type="email">
         </p>
         <p>
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="cadastro_telefone" name="telefone"><br><br>
+            <label for="cadastro_telefone">Telefone:</label>
+            <input id="cadastro_telefone" type="text">
         </p>
         <p>
-            <label for="senha">Senha:</label>
-            <input type="password" id="cadastro_senha" name="senha"><br><br>
+            <label for="cadastro_senha">Senha:</label>
+            <input id="cadastro_senha" type="password">
         </p>
         <p>
-            <label for="repetir_senha">Repetir Senha:</label>
-            <input type="password" id="repetir_senha" name="repetir_senha"><br><br>
+            <label for="cadastro_senha_confirm">Confirme a senha:</label>
+            <input id="cadastro_senha_confirm" type="password">
         </p>
         <p>
             <button type="reset">Limpar</button>
@@ -41,23 +46,34 @@
     </form>
 
     <hr>
-    <h2>Usuários Cadastrados</h2>
+    <h2>Usuários cadastrados</h2>
     <table>
         <tr>
-            <th>Luana Santana</th>
-            <th>luana.lup@gmail.com</th>
-            <th>2799876-8866</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Ações</th>
         </tr>
         <tr>
-            <th>Lua Santana</th>
-            <th>lua.lindinha@gmail.com</th>
-            <th>2799678-0067</th>
+            <td>Paula da Sousa</td>
+            <td>paula@sousa.com.br</td>
+            <td>2798564453</td>
+            <td>Editar | Excluir</td>
         </tr>
         <tr>
-            <th>Lups Santana</th>
-            <th>lupsgatinha@gmail.com</th>
-            <th>2799554-2345</th>
+            <td>Joyce da Silva</td>
+            <td>joyce@silva.com.br</td>
+            <td>279987-5536</td>
+            <td>Editar | Excluir</td>
+        </tr>
+        <tr>
+            <td>Bruna da Pereira</td>
+            <td>Bruna@gmail.com.br</td>
+            <td>279945-8754</td>
+            <td>Editar | Excluir</td>
         </tr>
     </table>
+
+</body>
 
 </html>
